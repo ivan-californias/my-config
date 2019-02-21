@@ -33,3 +33,6 @@ autocmd Filetype css setlocal ts=2 sw=2 sts=0 expandtab
 autocmd BufEnter *.vue setlocal ts=2 sw=2 sts=0 expandtab
 " For Robotframeworkswitch tabs for spaces
 autocmd BufEnter *.robot setlocal ts=4 sw=4 sts=0 expandtab
+
+" Dont search in whole git for command-T instead current pwd
+let g:CommandTTraverseSCM='pwd'

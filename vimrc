@@ -1,3 +1,8 @@
+" Basic setup
+set nocompatible
+syntax enable
+filetype plugin on
+
 " Temporary files to /tmp
 set backupdir=/tmp//
 set directory=/tmp//

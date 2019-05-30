@@ -24,6 +24,9 @@ let g:netrw_liststyle = 3
 let g:netrw_browse_split = 4
 let g:netrw_winsize = 15
 
+" Extra functionality
+" Visual selection search
+vnoremap // y/<C-R>"<CR>
 
 " Temporary files to /tmp
 set backupdir=/tmp//

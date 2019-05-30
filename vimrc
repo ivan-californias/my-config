@@ -1,7 +1,29 @@
 " Basic setup
 set nocompatible
 syntax enable
+set nowrap
+set encoding=utf8
 filetype plugin on
+
+" Editor settings
+set number
+set ruler
+set laststatus=2
+set cursorline
+highlight CursorLine cterm=NONE ctermbg=black
+highlight LineNr ctermfg=gray ctermbg=black
+
+" Hide buffers
+set hidden
+set background=dark
+set switchbuf=usetab
+
+" Netrw
+let g:netrw_banner = 0
+let g:netrw_liststyle = 3
+let g:netrw_browse_split = 4
+let g:netrw_winsize = 15
+
 
 " Temporary files to /tmp
 set backupdir=/tmp//
@@ -14,17 +36,13 @@ nmap <esc>OB <Down>
 nmap <esc>OC <Right>
 nmap <esc>OD <Left>
 
-set hidden
-
-" background
-set background=dark
-" use newtabs for buffers
-set switchbuf=usetab
 " Switch tabs for spaces and control indentation
 " set expandtab
 " set shiftwidth=4
 " set tabstop=4
 set autoindent
+
+" List invisible chars
 set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:.
 "set list
 

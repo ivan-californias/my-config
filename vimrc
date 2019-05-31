@@ -22,7 +22,7 @@ set switchbuf=usetab
 let g:netrw_banner = 0
 let g:netrw_liststyle = 3
 let g:netrw_browse_split = 4
-let g:netrw_winsize = 15
+let g:netrw_winsize = 30
 
 " Extra functionality
 " Visual selection search
@@ -46,7 +46,7 @@ nmap <esc>OD <Left>
 set autoindent
 
 " List invisible chars
-set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:.
+"set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:.
 "set list
 
 " For Javascript switch tabs for spaces

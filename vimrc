@@ -1,7 +1,7 @@
 " Basic setup
 set nocompatible
 syntax enable
-set nowrap
+"set nowrap
 set encoding=utf8
 filetype plugin on
 
@@ -55,6 +55,8 @@ autocmd Filetype javascript setlocal ts=2 sw=2 sts=0 expandtab
 autocmd Filetype html setlocal ts=2 sw=2 sts=0 expandtab
 " For CSS switch tabs for spaces
 autocmd Filetype css setlocal ts=2 sw=2 sts=0 expandtab
+" For PHP switch tabs for spaces
+autocmd Filetype php setlocal ts=4 sw=4 sts=0 expandtab
 " For Vue switch tabs for spaces
 autocmd BufEnter *.vue setlocal ts=2 sw=2 sts=0 expandtab
 " For Robotframeworkswitch tabs for spaces

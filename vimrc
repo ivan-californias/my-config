@@ -46,7 +46,7 @@ nmap <esc>OD <Left>
 set autoindent
 
 " List invisible chars
-"set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:.
+set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:.
 "set list
 
 " For Javascript switch tabs for spaces

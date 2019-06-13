@@ -19,7 +19,9 @@ gpass() {
 }
 
 # Open vim with all files in conflict when rebasing or merging
-alias vimgc="vim '+/\(<<<<<<<.*\|=======.*\|>>>>>>>.*\)' $(git diff --name-only | sort -u)"
+vimgc() {
+	vim "+/\(<<<<<<<.*\|=======.*\|>>>>>>>.*\)" $(git diff --name-only --diff-filter=U | sort -u)
+}
 
 # Open vim with left explorer
 alias vimx="vim +Vex"

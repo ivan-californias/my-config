@@ -18,6 +18,8 @@ gpass() {
 	openssl rand $1 | openssl base64 -A | cut -c -$1
 }
 
+# Open vim with all files in conflict when rebasing or merging
 alias vimgc="vim '+/\(<<<<<<<.*\|=======.*\|>>>>>>>.*\)' $(git diff --name-only | sort -u)"
 
+# Open vim with left explorer
 alias vimx="vim +Vex"

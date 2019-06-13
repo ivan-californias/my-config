@@ -17,3 +17,7 @@ export PATH
 gpass() {
 	openssl rand $1 | openssl base64 -A | cut -c -$1
 }
+
+alias vimgc="vim '+/\(<<<<<<<.*\|=======.*\|>>>>>>>.*\)' $(git diff --name-only | sort -u)"
+
+alias vimx="vim +Vex"

@@ -25,3 +25,4 @@ vimgc() {
 
 # Open vim with left explorer
 alias vimx="vim +Vex"
+alias dockerc="docker-compose"

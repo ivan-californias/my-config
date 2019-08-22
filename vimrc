@@ -44,7 +44,7 @@ nmap <esc>OD <Left>
 " set shiftwidth=4
 " set tabstop=4
 set autoindent
-set smartident
+set smartindent
 
 " List invisible chars
 set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:.

@@ -40,9 +40,9 @@ nmap <esc>OC <Right>
 nmap <esc>OD <Left>
 
 " Switch tabs for spaces and control indentation
-set expandtab
-set shiftwidth=4
-set tabstop=4
+"set expandtab
+"set shiftwidth=4
+"set tabstop=4
 set autoindent
 set smartindent
 

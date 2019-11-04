@@ -6,7 +6,10 @@ if [ -f /etc/bashrc ]; then
 fi
 
 # User specific environment
-PATH="$HOME/.local/bin:$HOME/bin:$PATH"
+if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]
+then
+    PATH="$HOME/.local/bin:$HOME/bin:$PATH"
+fi
 export PATH
 
 # Uncomment the following line if you don't like systemctl's auto-paging feature:
@@ -27,3 +30,4 @@ vimgc() {
 alias vimx="vim +Vex"
 alias dockerc="docker-compose"
 alias gotags="find . -name '*.go' ! -path './build/*' ! -path './vendor/*' | xargs gotags >> tags"
+alias docker=podman

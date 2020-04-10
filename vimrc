@@ -12,6 +12,8 @@ set laststatus=2
 set cursorline
 highlight CursorLine cterm=NONE ctermbg=black
 highlight LineNr ctermfg=gray ctermbg=black
+set splitright
+set splitbelow
 
 " Hide buffers
 set hidden

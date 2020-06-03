@@ -24,7 +24,15 @@ set switchbuf=usetab
 let g:netrw_banner = 0
 let g:netrw_liststyle = 3
 let g:netrw_browse_split = 4
-let g:netrw_winsize = 30
+let g:netrw_winsize = 15
+"augroup ProjectDrawer
+"  autocmd!
+"  autocmd VimEnter * :Vexplore
+"augroup END
+
+" NERDTree
+nmap <C-n> :NERDTreeToggle<CR>
+nmap <C-m> :NERDTreeFocus<CR>
 
 " Extra functionality
 " Visual selection search
@@ -54,10 +62,13 @@ set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:.
 
 " For Javascript switch tabs for spaces
 autocmd Filetype javascript setlocal ts=2 sw=2 sts=0 expandtab
+autocmd Filetype json setlocal ts=2 sw=2 sts=0 expandtab
 " For HTML switch tabs for spaces
 autocmd Filetype html setlocal ts=2 sw=2 sts=0 expandtab
 " For CSS switch tabs for spaces
 autocmd Filetype css setlocal ts=2 sw=2 sts=0 expandtab
+autocmd Filetype scss setlocal ts=2 sw=2 sts=0 expandtab
+autocmd Filetype sass setlocal ts=2 sw=2 sts=0 expandtab
 " For Yaml switch tabs for spaces
 autocmd Filetype yaml setlocal ts=4 sw=4 sts=0 expandtab
 " For PHP switch tabs for spaces

@@ -31,8 +31,10 @@ let g:netrw_winsize = 15
 "augroup END
 
 " NERDTree
-nmap <C-n> :NERDTreeToggle<CR>
-nmap <C-m> :NERDTreeFocus<CR>
+nnoremap <Plug>(NerdTreeToggle) :NERDTreeToggle<CR>
+nnoremap <Plug>(NerdTreeFocus) :NERDTreeFocus<CR>
+nmap \n <Plug>(NerdTreeToggle)
+nmap \m <Plug>(NerdTreeFocus)
 
 " Extra functionality
 " Visual selection search

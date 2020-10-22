@@ -83,8 +83,11 @@ autocmd BufEnter *.robot setlocal ts=4 sw=4 sts=0 expandtab
 autocmd BufEnter *.tf setlocal ts=2 sw=2 sts=0 expandtab
 
 " Ignore some directories
-set wildignore+=node_modules,build
+set wildignore+=node_modules,build,env
 
 " Dont search in whole git for command-T instead current pwd
 let g:CommandTTraverseSCM='pwd'
 
+" Fix html identation
+let g:html_indent_script1 = "inc"
+let g:html_indent_style1 = "inc"

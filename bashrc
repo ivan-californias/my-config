@@ -30,3 +30,4 @@ vimgc() {
 alias vimx="vim +Vex"
 alias dockerc="docker-compose"
 alias gotags="find . -name '*.go' ! -path './build/*' ! -path './vendor/*' | xargs gotags >> tags"
+alias fixssh='eval $(tmux showenv -s SSH_AUTH_SOCK)'
